@@ -1,0 +1,52 @@
+
+:root {
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+.container {
+    /*background-color: aquamarine;*/
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    "lateral main main main"
+    "lateral cont1 cont2 cont3"
+    "footer footer footer footer";
+    grid-gap: 0.1rem;
+
+
+}
+
+nav {grid-area: nav; background-color: blue; border-radius:var(--main-radius); padding:var(--main-padding);}
+main {grid-area: main; background-color: lightslategrey; border-radius:var(--main-radius); padding:var(--main-padding)}
+
+
+#lateral {grid-area: lateral; background-color: chartreuse; border-radius:var(--main-radius); padding:var(--main-padding);}
+#cont1 {grid-area: cont1; background-color: chocolate; border-radius:var(--main-radius); padding:var(--main-padding);}
+#cont2 {grid-area: cont2; background-color: darkgoldenrod; border-radius:var(--main-radius); padding:var(--main-padding);}
+#cont3 {grid-area: cont3; background-color: darkorchid; border-radius:var(--main-radius); padding:var(--main-padding);}
+
+footer {grid-area: footer; background-color: deeppink; border-radius:var(--main-radius); padding:var(--main-padding);}
+
+/* LAYOUT PARA MOBILE */
+
+@media only screen and (max-width: 450px) {
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr;
+    grid-template-areas:
+    "nav"
+    "main"
+    "lateral"
+    "cont1"
+    "cont2"
+    "cont3"
+    "footer";
+}
+}
+
+

@@ -1,0 +1,50 @@
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+.container {
+  /*background-color: aquamarine;*/
+  font-family: "Courier New", Courier, monospace;
+  background-color: brown;
+}
+
+nav {
+  background-color: blue;
+}
+
+/* ---------- NAVEGAÇÃO ----------  */
+
+nav ul {
+    background-color: blueviolet;
+    width: 90%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  
+  nav ul li {
+    padding: 5px;
+    margin: 10px;
+    background-color: aqua;
+
+ 
+  }
+
+/* ---------- SEÇÕES ----------  */
+
+#box2secao {
+  display: flex;
+  background-color: cornflowerblue;
+}
+
+section {
+  background-color: lightslategrey;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+  flex: 200px;
+  flex-wrap: wrap;
+}
+
+
+/* LAYOUT PARA MOBILE */
