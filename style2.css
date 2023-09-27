@@ -1,11 +1,12 @@
-body {
-  width: 90%;
-  margin: 0 auto;
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
 }
+
 .container {
   /*background-color: aquamarine;*/
   font-family: "Courier New", Courier, monospace;
-  background-color: brown;
+  background-color: rgb(153, 165, 42);
 }
 
 nav {
@@ -15,20 +16,15 @@ nav {
 /* ---------- NAVEGAÇÃO ----------  */
 
 nav ul {
-    background-color: blueviolet;
-    width: 90%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-
+    background-color: rgb(110, 0, 213);
+    display: flex;
+    flex-wrap: wrap;
   }
   
   nav ul li {
     padding: 5px;
     margin: 10px;
     background-color: aqua;
-
- 
   }
 
 /* ---------- SEÇÕES ----------  */

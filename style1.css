@@ -1,3 +1,8 @@
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   /*background-color: aquamarine;*/
   font-family: "Courier New", Courier, monospace;
@@ -5,14 +10,14 @@
 }
 
 nav {
-  background-color: blue;
+  background-color: rgb(234, 255, 0);
 }
 
 /* ---------- NAVEGAÇÃO ----------  */
 
 nav ul {
     background-color: blueviolet;
-    display: inline-flex;
+    display: flex;
   }
   
   nav ul li {
@@ -20,9 +25,15 @@ nav ul {
     margin: 10px;
     background-color: aqua;
     display: inline-flex;
+
   }
 
 /* ---------- SEÇÕES ----------  */
+section {
+  background-color: rgb(189, 199, 209);
+  padding: 5px;
+  margin: 0 5px 0 0;
+}
 
 #box2secao {
   display: inline-flex;
@@ -31,11 +42,7 @@ nav ul {
   min-width: 250px;
 }
 
-section {
-  background-color: lightslategrey;
-  padding: 5px;
-  margin: 0 5px 0 0;
-}
+
 
 
 /* LAYOUT PARA MOBILE */
